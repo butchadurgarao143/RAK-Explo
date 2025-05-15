@@ -1,1 +1,53 @@
-test
+Install winscp to transfer files local to server
+https://winscp.net/eng/download.php
+To transfer files from your local Windows machine to a remote server, WinSCP is a popular GUI-based tool that supports SFTP, SCP, FTP, and WebDAV.
+
+Here’s a step-by-step guide to install and use WinSCP:
+
+✅ Step 1: Download and Install WinSCP
+Go to the official WinSCP website.
+
+Download the Installation package (not the portable one).
+
+Run the installer and follow the prompts:
+
+Choose Typical Installation.
+
+Interface Style: Choose Commander (default and recommended).
+
+✅ Step 2: Connect to Your Server
+Open WinSCP.
+
+In the Login window, enter the following:
+
+File protocol: SFTP (or SCP or FTP depending on what your server supports)
+
+Host name: your.server.ip.address or your.domain.com
+
+Port number: 22 (for SFTP/SCP) or 21 (for FTP)
+
+Username: your_server_username
+
+Password: your_password (or configure key-based auth)
+
+🔐 Optional: For SSH Key login,
+
+Click Advanced > SSH > Authentication
+
+Browse and select your private key file (e.g., .ppk or .pem)
+
+Click Save (optional), then Login.
+
+✅ Step 3: Transfer Files
+On the left: Your local system.
+
+On the right: Your remote server.
+
+Simply drag and drop files between panes to upload/download.
+
+💡 Useful Tips
+You can also set file/folder permissions post-upload.
+
+Use "Keep remote directory up to date" (under Commands) for live sync.
+
+Command-line automation is available using the WinSCP.com scripting interface.
